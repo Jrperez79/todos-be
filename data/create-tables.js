@@ -19,7 +19,7 @@ async function run() {
                 );           
                 CREATE TABLE animals (
                     id SERIAL PRIMARY KEY NOT NULL,
-                    todo VARCHAR(512) NOT NULL,
+                    todos VARCHAR(512) NOT NULL,
                     completed BOOLEAN NOT NULL,
                     owner_id INTEGER NOT NULL REFERENCES users(id)
             );
